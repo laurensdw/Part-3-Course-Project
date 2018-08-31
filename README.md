@@ -21,11 +21,15 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-# The dataset includes the following files:
+# The git repository includes the following files:
 
 - 'README.md'
 
+- 'run_analysis.R': The script to obtain the tidy dataset.
+
 - 'Codebook.txt': Shows information about the variables used on the feature vector.
+
+- 'output.txt': The output table of the analysis as can be obtained by running 'run_analysis.R'.
 
 - 'UCI HAR Dataset/features.txt': List of all original features.
 
