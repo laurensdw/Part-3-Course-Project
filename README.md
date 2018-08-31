@@ -12,6 +12,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
   - Descriptive headings are present.
   - All unique variables are in unique columns.
   - There are no duplicate columns.
+  
+The abovementioned steps are all present in the run_analysis.R script. If this script is ran, all these steps are executed sequentially and the tidy dataset is written to an output file in .txt format.
 
 # For each record it is provided:
 
