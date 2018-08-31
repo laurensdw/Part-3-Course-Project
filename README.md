@@ -39,7 +39,7 @@ The dataset includes the following files:
 
 - 'README.md'
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'Codebook.txt': Shows information about the variables used on the feature vector.
 
 - 'features.txt': List of all original features.
 
