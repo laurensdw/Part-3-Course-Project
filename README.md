@@ -29,7 +29,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 - 'Codebook.txt': Shows information about the variables used on the feature vector.
 
-- 'output.txt': The output table of the analysis as can be obtained by running 'run_analysis.R'.
+- 'output.txt': The output table of the analysis as can be obtained by running 'run_analysis.R'. This output can also be directly read into R by running the following command: read.table('output.txt', header = TRUE)
 
 - 'UCI HAR Dataset/features.txt': List of all original features.
 
