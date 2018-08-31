@@ -39,9 +39,9 @@ The dataset includes the following files:
 
 - 'Codebook.txt': Shows information about the variables used on the feature vector.
 
-- 'features.txt': List of all original features.
+- 'UCI HAR Dataset/features.txt': List of all original features.
 
-- 'activity_labels.txt': Links the class labels with their activity name.
+- 'UCI HAR Dataset/activity_labels.txt': Links the class labels with their activity name.
 
 - 'train/X_train.txt': Training set.
 
