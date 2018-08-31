@@ -3,13 +3,13 @@ library(dplyr)
 library(plyr)
 
 ## Loading data
-df_train_data <- read.table('train/X_train.txt')
-df_train_labels <- read.table('train/y_train.txt')
-df_train_subject <- read.table('train/subject_train.txt')
-df_test_data <- read.table('test/X_test.txt')
-df_test_labels <- read.table('test/y_test.txt')
-df_test_subject <- read.table('test/subject_test.txt')
-features <- read.table('features.txt')
+df_train_data <- read.table('UCI HAR Dataset/train/X_train.txt')
+df_train_labels <- read.table('UCI HAR Dataset/train/y_train.txt')
+df_train_subject <- read.table('UCI HAR Dataset/train/subject_train.txt')
+df_test_data <- read.table('UCI HAR Dataset/test/X_test.txt')
+df_test_labels <- read.table('UCI HAR Dataset/test/y_test.txt')
+df_test_subject <- read.table('UCI HAR Dataset/test/subject_test.txt')
+features <- read.table('UCI HAR Dataset/features.txt')
 
 ## Merging data
 df_train <- cbind(df_train_data, df_train_subject)
@@ -36,7 +36,7 @@ df$activity_labels <- revalue(df$activity_labels,
 df_meanstd <- df[grepl("mean()", colnames(df)) | grepl("std()", colnames(df)) | 
                    grepl("activity_labels", colnames(df)) | grepl("subject", colnames(df))]
 
-## Calculating average measurements per subject and activity
+## Calculating average measurements per subject and activity and putting in it in a tidy data set.
 df_average <- df_meanstd %>% 
   group_by(subject, activity_labels) %>% 
   summarise_all(funs(mean))
