@@ -40,3 +40,6 @@ df_meanstd <- df[grepl("mean()", colnames(df)) | grepl("std()", colnames(df)) |
 df_average <- df_meanstd %>% 
   group_by(subject, activity_labels) %>% 
   summarise_all(funs(mean))
+
+## Writing clean dataset to txt
+write.table(df_average,file='output.txt',row.name=FALSE)
